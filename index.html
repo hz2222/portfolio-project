@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    
+    <a href="#" class="logo"><span>Horváth Zoltán</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#languages">Languages</a>
+        <a href="#myprojects">My projects</a>
+        <a href="#aboutme">About me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header> 
+
+<section class="home" id="home">
+    <div class="introduction">
+        <h3>
+        Welcome on my portfolio site!
+        <br>
+        My name is Horváth Zoltán.
+        <br>
+        I am a Frontend Developer.
+        </h3>
+    </div>
+</section>
+
+<section class="languages" id="languages">
+    <h1 class="heading">My skills</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="html-pic.png" alt="" width="60%">
+            <h3>HTML</h3>
+            <button type="submit" onclick="displayp1()">Get Info</button>
+            <p id="p1"></p>
+        </div>
+        <div class="box">
+            <img src="css-pic.png" alt="" width="60%" height="45%">
+            <h3>CSS</h3>
+            <button type="submit" onclick="displayp2()">Get Info</button>
+            <p id="p2"></p>
+        </div>
+        <div class="box">
+            <img src="js-pic.png" alt="" width="60%">
+            <h3>JavaScript</h3>
+            <button type="submit" onclick="displayp3()">Get Info</button>
+            <p id="p3"></p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="languages" id="myprojects">
+    <h1 class="heading">My projects</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="recipe-searcher-pic.png"  width="100%">
+            <h3>Recipe searcher</h3>
+            <p>Used technologies: React , Javascript , HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="quote-generator-pic.png" height="60%"  width="100%" >
+            <h3>Quote generator</h3>
+            <p>Used technologies: Javascript , HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bmi-calc-pic.png"  width="100%">
+            <h3>BMI calculator</h3>
+            <p>Used technologies: React , Javascript , HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="name-predict.png" height="150" width="100%">
+            <h3>Name nationality predictor</h3>
+            <p>Used technologies: Javascript , HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="cafe-landing-page.png"  width="100%" >
+            <h3>Landing page for a coffee shop</h3>
+            <p>Used technologies: HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="ski-reg.png"  width="100%">
+            <h3>Registration page for a ski company</h3>
+            <p>Used technologies: HTML , CSS</p>
+            <div class="link-btn">
+                <a class="link" href="">Code</a>
+                <a class="link" href="">See live</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="aboutme" id="aboutme">
+    <h1>About me</h1>
+    <div class="box-container">
+        <div class="box">
+            <span>
+                Hi!
+                <br>
+                My name is Horváth Zoltán. I am learning to be a Frontend developer at Mimo. 
+                I make webpages for companys and for peoples. I live in Hungary. 
+            </span>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> Contact me</h1>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <img src="Calling-amico.png" alt="" width="40%">
+        <h3>Mobile number</h3>
+        <p>06703176124</p>
+    </div>
+
+    <div class="icons">
+        <img src="Emails-amico.png" alt="" width="40%">
+        <h3>Email</h3>
+        <p>lebber3131@gmail.com</p>
+    </div>
+
+    <div class="icons">
+        <img src="Navigation-amico.png" alt="" width="40%">
+        <h3>Location</h3>
+        <p>Hungary</p>
+    </div>
+</div>
+
+<div class="row">
+    
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.0655352082226!2d18.83513761506048!3d47.27397341889037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741fc8aeaafc317%3A0xf6aec3f12ae90168!2zUsOhY2tlcmVzenTDunIsIFN6ZWdmxbEgdS4gNTUsIDI0NjU!5e0!3m2!1shu!2shu!4v1651591346811!5m2!1shu!2shu"></iframe>
+</div>
+</section>
+
+<section class="footer">
+    <div class="footer-container">
+        <div class="box-container">
+            <div class="box">
+                <h3>Menu</h3>
+                <a href="#home">Home</a>
+                <a href="#languages">Languages</a>
+                <a href="#myprojects">My projects</a>
+                <a href="#aboutme">About me</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+                <a href="#">Tiktok</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
