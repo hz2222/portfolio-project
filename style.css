@@ -252,12 +252,7 @@ header .navbar a:hover {
     display: flex;
 }
 
- .aboutme h1 {
-     text-align: center;
-     padding: 1rem;
-     font-size: 4rem;
-     color: #1CED27;
- }
+
 
  .link-btn {
     justify-content: space-around;
