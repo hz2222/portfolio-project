@@ -208,7 +208,7 @@ header .navbar a:hover {
      background: #fff;
      border: .1rem solid rgba(0,0,0,.2);
      border-radius: .5rem;
-     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
      padding: 2rem;
  }
 
@@ -240,20 +240,6 @@ header .navbar a:hover {
     text-decoration: underline;
 }
 
-.aboutme .box-container .box {
-    background: #fff;
-    text-align: center;
-    border: .1rem solid rgba(0,0,0,.2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
-    border-radius: .5rem;
-    padding: 2rem;
-    position: relative;
-    font-size: 2rem;
-    display: flex;
-}
-
-
-
  .link-btn {
     justify-content: space-around;
     width: 100%;
@@ -266,8 +252,9 @@ header .navbar a:hover {
     cursor: pointer;
     border-radius: 10px;
     color: white;
-    margin: 30px;
+    margin: 40px;
     font-size: 15px;
+
  }
 
 
