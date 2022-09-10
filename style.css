@@ -113,29 +113,50 @@ header .navbar a:hover {
     font-size: 3rem;
 }
 
-
-.languages .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+.myskills .box-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin-top: 1.5rem;
+   align-items: center;
+   justify-content: center;
 }
 
-.languages .box-container .box {
-    flex: 1 1 30rem;
-    border-radius: 1rem;
-    background: #fff;
+.myskills .box-container .box {
+    padding:10px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.6);
-    text-align: center;
-    padding: 2rem;
+    width: 200px;
+    height: 200px;
 }
 
-.languages .box-container .box h3 {
+
+
+.myprojects .box-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin-top: 1.5rem;
+}
+
+.myprojects .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.6);
+}
+
+.myprojects .box-container .box h3 {
     font-size: 2.5rem;
     color: #333;
 }
 
-.languages .box-container .box p {
+.myprojects .box-container .box p {
     font-size: 1.5rem;
     color: #666;
     padding: .5rem 0;
@@ -236,14 +257,17 @@ header .navbar a:hover {
     cursor: pointer;
     border-radius: 10px;
     color: white;
-    margin: 30px;
+    margin: 50px;
     font-size: 15px;
 
  }
 
 
 
-@media (max-widht:991px) {
+@media (max-widht:900px) {
+
+    .myprojects .box-container{ grid-template-columns: 400px;
+    }
 
     html {
         font-size: 55%;
@@ -275,9 +299,7 @@ header .navbar a:hover {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
+   
 
     header .navbar a {
         display: block;
