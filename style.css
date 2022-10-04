@@ -48,44 +48,67 @@ button {
     padding-bottom: 3rem;
 }
 
-
-
-header {
-    
-    top:0;
-    left:0; 
-    right:0;
-    z-index: 1000;
-    background: #fff;
+.navbar {
     padding: 1.5rem 9%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     display: flex;
-    align-items: center;
+    position: relative;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    background-color: white;
 }
 
-header .logo {
-    font-weight: bolder;
+.brand-title {
     font-size: 2.5rem;
+    font-weight: bolder;
+    margin: .5rem;
+    color: #1CED27;
+
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
     color: #333;
+    font-size: 1.7rem;
+    padding: 1rem;
 }
 
-header .logo span {
-    color: var(--green);
+.navbar-links li a:hover {
+    color: #1CED27;
 }
 
-header .navbar a {
-    color: #333;
-    font-size: 2rem;
-    padding: 0 1.5rem;
+.toggle-button {
+    position: absolute;
+    top: 2.2rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-header .navbar a:hover {
-    color: var(--green);
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
-
-
 
 .home {
     min-height: 100vh;
@@ -128,7 +151,7 @@ header .navbar a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.6);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
     width: 200px;
     height: 200px;
     background-color: white;
@@ -150,11 +173,12 @@ header .navbar a:hover {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.6);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
     width: 350px;
     height: 450px;
     background-color: white;
     text-align: center;
+    margin: 0.5rem;
     
 }
 
@@ -185,7 +209,7 @@ header .navbar a:hover {
      padding: 2rem;
      border: .1rem solid rgba(0,0,0,.2);
      border-radius: 20px;
-     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
      text-align: center;
  }
 
@@ -204,7 +228,7 @@ header .navbar a:hover {
  .contact .row {
      background: #fff;
      border: rgba(0,0,0,.2);
-     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
      border-radius: 20px;
      display: flex;
      flex-wrap: wrap-reverse;
@@ -221,7 +245,7 @@ header .navbar a:hover {
      background: #fff;
      border: .1rem solid rgba(0,0,0,.2);
      border-radius: 20px;
-     box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.4);
      padding: 2rem;
  }
 
@@ -283,3 +307,37 @@ header .navbar a:hover {
     width: 100%;
     height: 70%;
  }
+
+
+ @media (max-width: 585px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
