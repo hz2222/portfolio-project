@@ -32,15 +32,6 @@ section {
     padding: 2rem 9%;
 }
 
-button {
-    background-color: #1CED27;
-    color: white;
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
 .heading {
     text-align: center;
     color: #333;
@@ -94,7 +85,7 @@ button {
 
 .toggle-button {
     position: absolute;
-    top: 2.2rem;
+    top: 2.5rem;
     right: 1.5rem;
     display: none;
     flex-direction: column;
@@ -146,7 +137,7 @@ button {
 }
 
 .myskills .box-container .box {
-    padding: 10px;
+    padding: 2rem;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -169,7 +160,7 @@ button {
 }
 
 .myprojects .box-container .box {
-    padding: 10px;
+    padding: 2rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -246,7 +237,7 @@ button {
      border: .1rem solid rgba(0,0,0,.2);
      border-radius: 20px;
      box-shadow: 0 .5rem 1rem rgba(0,0,0,0.4);
-     padding: 2rem;
+     padding: 4rem;
  }
 
  .footer .footer-container .box-container {
@@ -283,7 +274,7 @@ button {
  
 
  .code-btn {
-    background-color: #1CED27;
+    background-color: #55c2da;
     padding: 7px;
     margin: 10px;
     cursor: pointer;
@@ -293,7 +284,7 @@ button {
  }
  
  .see-btn {
-    background-color: #1CED27;
+    background-color:#55c2da;
     padding: 7px;
     margin: 10px;
     cursor: pointer;
