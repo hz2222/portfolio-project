@@ -209,6 +209,7 @@ nav {
      flex-wrap: wrap;
      gap: 1.5rem;
      padding-bottom: 2rem;
+     
 }
 
  .contact .icons-container .icons {
@@ -217,7 +218,7 @@ nav {
      border-radius: 20px;
      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
      text-align: center;
-     padding: 1rem;
+     padding: 2rem;
  }
 
  .contact .icons-container .icons h3 {
