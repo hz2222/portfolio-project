@@ -39,10 +39,6 @@ section {
     padding-bottom: 3rem;
 }
 
-nav {
-    width: 100%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
 
 .navbar {
     padding: 1.5rem 9%;
@@ -50,7 +46,7 @@ nav {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    width: 100%;
 }
 
 .brand-title {
@@ -106,43 +102,40 @@ nav {
 }
 
 .home {
-    background:url(dominik-schroder-FIKD9t5_5zQ-unsplash\ \(1\).jpg);
-    background-size:cover;
-    background-position:center center;
-    background-attachment:fixed;
+    background-color: white;
     min-height: 90vh;
-}
-
-.home .box-container {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-.home .introduction {
-    padding: 1rem;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    justify-content: center;
-    display: flex;
-    padding-top: 6rem;
 }
 
-.avatar-container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.home img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
 }
 
-.avatar {
-    width: 70%;
+.home h5 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 5px;
 }
 
-.home .introduction h3 {
-    text-align: center;
-    color: white;
-    font-size: 4rem;
-    font-family: sans-serif;
+.home h1 {
+    font-size: 5rem;
+    color: #63c5ea;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 10px;
+}
+
+.home h6, p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
 }
 
 .myskills .box-container {
@@ -288,7 +281,7 @@ nav {
  
 
  .code-btn {
-    background-color: #55c2da;
+    background-color: #63c5ea;
     padding: 7px;
     margin: 10px;
     cursor: pointer;
@@ -298,7 +291,7 @@ nav {
  }
  
  .see-btn {
-    background-color:#55c2da;
+    background-color:#63c5ea;
     padding: 7px;
     margin: 10px;
     cursor: pointer;
@@ -316,14 +309,11 @@ nav {
 
 
  @media (max-width: 950px) {
- .home .box-container  {
+ .home   {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-}
-
-.avatar {
-    width: 80%;
+    align-items: center;
 }
 
 .navbar {
