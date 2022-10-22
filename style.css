@@ -294,6 +294,7 @@ section {
     border-radius: 10px;
     color: white;
     font-size: 18px;
+    transition: 1s;
  }
 
  .homebtn:hover {
