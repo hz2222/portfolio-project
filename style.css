@@ -180,7 +180,11 @@ section {
     background-color: white;
     text-align: center;
     margin: 0.5rem;
-    
+    transition: 1s;
+}
+
+.myprojects .box-container .box:hover {
+    transform: scale(1.1);
 }
 
 .myprojects .box-container .box h3 {
