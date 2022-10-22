@@ -279,6 +279,22 @@ section {
     width: 100%;
  }
  
+.homebtn-div {
+    margin-top: 50px;
+}
+
+ .homebtn {
+    background-color: #0096FF;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+ }
+
+ .homebtn:hover {
+    background-color: #63c5ea;
+ }
 
  .code-btn {
     background-color: #0096FF;
